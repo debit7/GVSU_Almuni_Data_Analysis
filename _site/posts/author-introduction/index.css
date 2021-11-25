@@ -1,0 +1,209 @@
+.job-title {
+  padding: 0;
+}
+
+.job-title p {
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons ul {
+   text-decoration: none;
+    list-style:none;
+}
+
+.social-icons li {
+   display: table;
+   float:left;
+   margin: 0px 10px;
+}
+
+.pro-icon {
+    font-size:20px;
+}
+
+.company {
+   margin: 5px 0 10px;
+    text-decoration: underline;
+    color: #0f2e3d;
+}
+
+.column {
+  float: left;
+
+}
+
+.column img {
+  border-radius: 100px;
+  width: 200px !important;
+  
+}
+
+.column ul {
+  list-style: disc;
+}
+
+/*.column li {
+  float: left;
+ display:table;
+  margin:0px auto 0px auto;
+}*/
+
+.leftly li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.column a, .column a:hover {
+  border:0px;
+}
+
+.column h2 {
+  font-size:22px;
+  clear: both;
+  margin: 5px 0;
+  border-bottom:none;
+    padding: 0;
+}
+
+.profile {
+  text-align:center;
+  margin: 50px 0 0;
+}
+
+.row {
+  width: 1100px !important;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 65%;
+}
+
+
+.colskill {
+   width: 30%;
+   font-size:14px;
+   margin: 50px 0 0 3.33%;
+   
+}
+
+.colskill h4 {
+  font-size:1.2em;
+  margin:10px;
+}
+
+
+.skill {
+  margin: 0;
+  width:1100px;
+  text-align:center;
+}
+
+.skill h2 {
+  font-size:2em;
+  text-align: center;
+    margin: 0;
+    border: 0px;
+}
+
+
+
+.leftly {
+   width: 45%;
+}
+
+.rightly {
+  width: 55%;
+}
+
+@media screen and (max-width: 1040px) {
+  
+  .leflty li {
+    float: none; 
+
+    margin: 0px 10px;
+}
+
+.colskill {
+    width: 100%;
+    margin: 10px 0 0;
+}
+  
+  .column {
+    width: 100% !important;
+    margin: 10px 0 0 !important;
+    overflow-wrap: break-word;
+  }
+  
+  .column img {
+   width: 120px !important;
+  }
+  
+  .row {
+  width: 100% !important;
+}
+
+p {
+  width: 100% !important;
+  overflow-wrap: break-word;
+/*  margin: 10px 20px 0 !important;*/
+}
+
+d-article {
+    margin: 40px 0 0 0!important;
+    border: none;
+  
+}
+
+}
+
+d-title {
+display:none;
+}
+
+d-article {
+  
+   margin: 100px 0 0 -500px;
+    border: none;
+}
+
+d-article li {
+    margin-bottom: 0; 
+  
+}
+
+.title {
+  font-weight:bold;
+  color:#fff;
+}
+
+.bio {
+font-size:25px;
+}
+
+.hat {
+font-size:25px;
+}
+
+.colskill .fab, .colskill .fas {
+ font-size: 4em; 
+ color: #0a587d;
+}
+
+

@@ -1,0 +1,31 @@
+[
+  {
+    "path": "posts/career-center-review/",
+    "title": "Career Center Review",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Debit paudel",
+        "url": {}
+      }
+    ],
+    "date": "2021-11-25",
+    "categories": [],
+    "contents": "\n\n\n\n\n\n\n",
+    "preview": "posts/career-center-review/career-center-review_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2021-11-25T16:12:06+00:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/author-introduction/",
+    "title": "Author Inroduction",
+    "description": "Debit is a Student of MS in Data Science and Analytics.",
+    "author": [],
+    "date": "2021-11-24",
+    "categories": [],
+    "contents": "\n\n\n\n\nDebit Paudel\n\n\n\nData Scientist\n\n\nGrduate Research Assistant at GVSU\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiography\nI dont like describing Myself. Haha\nI write codes in C#, Python , R and .NET Frameworks Besides that, I’m also familiar with Microsoft Products like PowerBI, Azure Machine Learning.\nFor pleasure, I enjoy books 📖, cooking 🍳, music 🎶, travel ✈.\nYou might want to read my Data Science Blogs.\n\nInterests\nData Science / Machine Learning\nNatural Language Processing\n\n\nEducation\n🎓 MS Data Science & Analytics , GVSU\n🎓 B.E. Electronics & Comm., Tribhuvan University\n\n\n\n\nSkills\n\n\nR Programming\nApply data science with R using tidyverse, automate business reports, build dashboard with R / Shiny.\n\n\n\nData Visualization\nVisualize the data using different tools like ggplot2, matplotlib, seaborn, tableau, PowerBI etc.\n\n\n\nPython\nHave Python development experience for Data Science projects.\n\n\n\nSQL\nHave working experience of SQL database like PostgreSQL, Microsoft SQL Server etc.\n\n\n\nProject Management\nHave lead the team members in Data Science projects. Have extensively used GitHub / GitLab for project management.\n\n\n\nDocker\nDeployed the Data Science application with Docker along with CI/CD tools.\n\n",
+    "preview": {},
+    "last_modified": "2021-11-24T17:34:47+00:00",
+    "input_file": {}
+  }
+]

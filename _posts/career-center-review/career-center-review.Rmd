@@ -1,0 +1,86 @@
+---
+title: "Career Center Review"
+description: |
+  A short description of the post.
+author:
+  - name: Debit paudel
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r}
+library(tidyverse)
+library(dplyr)
+test_alumni <- read_csv("data/alumni_data.csv")
+grouped_CC_review<-test_alumni %>% 
+  group_by(CC_job_Rating) %>% 
+    filter(CC_job_Rating !="NA")%>% 
+  summarise(n = n()) %>%
+arrange(desc(n))
+
+temp1<-test_alumni %>% 
+  group_by(CC_Drop_in_Advising_CareerLab) %>% 
+  summarise(n = n()) %>%
+  filter(CC_Drop_in_Advising_CareerLab !="NA")%>% 
+arrange(desc(n))
+temp1<-temp1%>%rename(CC_job_Rating= CC_Drop_in_Advising_CareerLab) 
+
+everything <-rbind(grouped_CC_review,temp1)
+temp2<-test_alumni %>% 
+  group_by(CC_Handshake_Jobs) %>% 
+  filter(CC_Handshake_Jobs !="NA")%>% 
+  summarise(n = n()) %>%
+arrange(desc(n))
+temp2<-temp2%>%rename(CC_job_Rating= CC_Handshake_Jobs) 
+everything <-rbind(everything,temp2)
+temp3<-test_alumni %>% 
+  group_by(CC_Interview_Preparation) %>% 
+  filter(CC_Interview_Preparation !="NA")%>% 
+  summarise(n = n()) %>%
+arrange(desc(n))
+temp3<-temp3%>%rename(CC_job_Rating= CC_Interview_Preparation) 
+everything <-rbind(everything,temp3)
+everything<-everything%>%rename(Ratings= CC_job_Rating) 
+everything$Question <- c('Job Rating'
+                            ,'Job Rating'
+                            ,'Job Rating'
+                            ,'Job Rating'
+                            ,'Job Rating'
+                           
+                            ,'Drop in Advising'
+                            ,'Drop in Advising'
+                            ,'Drop in Advising'
+                            ,'Drop in Advising'
+                            ,'Drop in Advising'
+                           
+                            
+                            ,'Handshake Jobs'
+                            ,'Handshake Jobs'
+                            ,'Handshake Jobs'
+                            ,'Handshake Jobs'
+                            ,'Handshake Jobs'
+                         
+                            ,'Interview Prepartion'
+                            ,'Interview Prepartion'
+                            ,'Interview Prepartion'
+                            ,'Interview Prepartion'
+                            ,'Interview Prepartion'
+                         
+                            
+                            
+)
+everything %>%
+  ggplot(aes(x=forcats::fct_reorder(Question,n),y=n, fill=Ratings)) +
+  geom_col() + 
+  coord_flip() + 
+  labs(x="Review Categories", y="Number of Participants")
+```
+
+
