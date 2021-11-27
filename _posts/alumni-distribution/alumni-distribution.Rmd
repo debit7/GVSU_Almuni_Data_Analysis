@@ -1,7 +1,7 @@
 ---
 title: "Alumni Distribution"
 description: |
-  A short description of the post.
+  This is an analysis of GVSU alumni graduates.
 author:
   - name: Debit paudel
     url: {}
@@ -42,6 +42,6 @@ plot_usmap(data=grouped_state, values="count_states", color='white', labels=FALS
                                              label = scales::number(count_states, accuracy = 1)), color = "white")
 
 ```
-
+This is the USA map showing the graduates distribution.
 
 
