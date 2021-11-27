@@ -1,0 +1,31 @@
+---
+title: "Yearly Employment Distribution"
+description: |
+  A short description of the post.
+author:
+  - name: Debit paudel
+    url: {}
+date: 11-27-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+```{r}
+library(tidyverse)
+library(lubridate)
+alumni_data <- read_csv("data/alumni_data.csv")
+
+alumni_data$RecordedDate<-str_c(substr(alumni_data$RecordedDate, 1,2),"-",substr(alumni_data$RecordedDate, 3,5),"-",substr(alumni_data$RecordedDate, 6,9)) 
+alumni_data
+alumni_data$RecordedDate<-as.Date(alumni_data$RecordedDate," %d-%b-%Y")
+alumni_data$Year_Recorded<-year(alumni_data$RecordedDate)
+alumni_data%>%select(ID,Year_Recorded,RecordedDate)
+```
+
+
+
