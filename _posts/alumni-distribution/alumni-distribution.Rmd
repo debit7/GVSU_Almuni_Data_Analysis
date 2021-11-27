@@ -1,0 +1,47 @@
+---
+title: "Alumni Distribution"
+description: |
+  A short description of the post.
+author:
+  - name: Debit paudel
+    url: {}
+date: 2021-11-26
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+```{r}
+library(tidyverse)
+library(dplyr)
+library(usmap)
+library(ggplot2)
+test_alumni <- read_csv("data/alumni_data.csv")
+grouped_state<-test_alumni %>% 
+  group_by(State) %>% 
+   filter(State !="NA", State !="Unknown", State !="International")%>% 
+  summarise(count_states = n()) %>%
+arrange(desc(count_states))
+names(grouped_state)[1] <- 'full'
+grouped_state$state = grouped_state$full
+
+library(stringr)
+
+# Get centroids
+centroid_labels <- utils::read.csv(system.file("extdata", paste0("us_", "states", "_centroids.csv"), package = "usmap"), stringsAsFactors = FALSE)
+# Join data to centroids
+data_labels <- centroid_labels %>% 
+  left_join(grouped_state)
+plot_usmap(data=grouped_state, values="count_states", color='white', labels=FALSE) + 
+  guides(fill="none") +
+  geom_text(data = data_labels, ggplot2::aes(x = x, y = y, 
+                                             label = scales::number(count_states, accuracy = 1)), color = "white")
+
+```
+
+
+
