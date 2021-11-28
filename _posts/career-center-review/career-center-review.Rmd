@@ -31,8 +31,8 @@ temp1<-test_alumni %>%
   filter(CC_Drop_in_Advising_CareerLab !="NA")%>% 
 arrange(desc(n))
 temp1<-temp1%>%rename(CC_job_Rating= CC_Drop_in_Advising_CareerLab) 
-
 everything <-rbind(grouped_CC_review,temp1)
+
 temp2<-test_alumni %>% 
   group_by(CC_Handshake_Jobs) %>% 
   filter(CC_Handshake_Jobs !="NA")%>% 
@@ -40,6 +40,7 @@ temp2<-test_alumni %>%
 arrange(desc(n))
 temp2<-temp2%>%rename(CC_job_Rating= CC_Handshake_Jobs) 
 everything <-rbind(everything,temp2)
+
 temp3<-test_alumni %>% 
   group_by(CC_Interview_Preparation) %>% 
   filter(CC_Interview_Preparation !="NA")%>% 
@@ -83,4 +84,129 @@ everything %>%
   labs(x="Review Categories", y="Number of Participants")
 ```
 
+
+```{r}
+library(tidyverse)
+library(dplyr)
+test_alumni <- read_csv("data/alumni_data.csv")
+grouped_CC_review1<-test_alumni %>%  
+  group_by(CC_Oncampus_Interview) %>% 
+    filter(CC_Oncampus_Interview !="NA")%>% 
+  summarise(n = n()) %>%
+arrange(desc(n))
+
+temp3<-test_alumni %>% 
+  group_by(CC_Networking_Strategies) %>% 
+  summarise(n = n()) %>%
+  filter(CC_Networking_Strategies !="NA")%>% 
+arrange(desc(n))
+temp3<-temp3%>%rename(CC_Oncampus_Interview= CC_Networking_Strategies) 
+everything2 <-rbind(grouped_CC_review1,temp3)
+
+temp4<-test_alumni %>% 
+  group_by(CC_Career_Major_Exploration) %>% 
+  filter(CC_Career_Major_Exploration !="NA")%>% 
+  summarise(n = n()) %>%
+arrange(desc(n))
+temp4<-temp4%>%rename(CC_Oncampus_Interview= CC_Career_Major_Exploration) 
+everything2 <-rbind(everything2,temp4)
+
+temp5<-test_alumni %>% 
+  group_by(CC_Fairs_Career_Events) %>% 
+  filter(CC_Fairs_Career_Events !="NA")%>% 
+  summarise(n = n()) %>%
+arrange(desc(n))
+temp5<-temp5%>%rename(CC_Oncampus_Interview= CC_Fairs_Career_Events) 
+everything2<-rbind(everything2,temp5)
+
+everything2<-everything2%>%rename(Ratings= CC_Oncampus_Interview) 
+everything2$Question <- c('Oncampus Interview'
+                            ,'Oncampus Interview'
+                            ,'Oncampus Interview'
+                            ,'Oncampus Interview'
+                            ,'Oncampus Interview'
+                           
+                            ,'Networking Strategies'
+                            ,'Networking Strategies'
+                            ,'Networking Strategies'
+                            ,'Networking Strategies'
+                            ,'Networking Strategies'
+                           
+                            
+                            ,'Career & Major Exploration'
+                            ,'Career & Major Exploration'
+                            ,'Career & Major Exploration'
+                            ,'Career & Major Exploration'
+                            ,'Career & Major Exploration'
+                         
+                            ,'Fairs & Career Events'
+                            ,'Fairs & Career Events'
+                            ,'Fairs & Career Events'
+                            ,'Fairs & Career Events'
+                            ,'Fairs & Career Events'
+                         
+                            
+                            
+)
+everything2 %>%
+  ggplot(aes(x=forcats::fct_reorder(Question,n),y=n, fill=Ratings)) +
+  geom_col() + 
+  coord_flip() + 
+  labs(x="Review Categories", y="Number of Participants")
+```
+
+```{r}
+library(tidyverse)
+library(dplyr)
+test_alumni <- read_csv("data/alumni_data.csv")
+grouped_CC_review2<-test_alumni %>%  
+  group_by(CC_Resume_Cover_Letter_Review) %>% 
+    filter(CC_Resume_Cover_Letter_Review !="NA")%>% 
+  summarise(n = n()) %>%
+arrange(desc(n))
+
+temp6<-test_alumni %>% 
+  group_by(CC_Career_Assessments) %>% 
+  summarise(n = n()) %>%
+  filter(CC_Career_Assessments !="NA")%>% 
+arrange(desc(n))
+temp6<-temp6%>%rename(CC_Resume_Cover_Letter_Review= CC_Career_Assessments) 
+everything3 <-rbind(grouped_CC_review2,temp6)
+
+temp7<-test_alumni %>% 
+  group_by(CC_Workshops) %>% 
+  filter(CC_Workshops!="NA")%>% 
+  summarise(n = n()) %>%
+arrange(desc(n))
+temp7<-temp7%>%rename(CC_Resume_Cover_Letter_Review= CC_Workshops) 
+everything3<-rbind(everything3,temp7)
+
+everything3<-everything3%>%rename(Ratings= CC_Resume_Cover_Letter_Review) 
+everything3$Question <- c('Resume & Cover Letter Review'
+                            ,'Resume & Cover Letter Review'
+                            ,'Resume & Cover Letter Review'
+                            ,'Resume & Cover Letter Review'
+                            ,'Resume & Cover Letter Review'
+                           
+                            ,'Career Assessment'
+                            ,'Career Assessment'
+                            ,'Career Assessment'
+                            ,'Career Assessment'
+                            ,'Career Assessment'
+                           
+                            
+                            ,'Workshops'
+                            ,'Workshops'
+                            ,'Workshops'
+                            ,'Workshops'
+                            ,'Workshops'
+                            
+                            
+)
+everything3 %>%
+  ggplot(aes(x=forcats::fct_reorder(Question,n),y=n, fill=Ratings)) +
+  geom_col() + 
+  coord_flip() + 
+  labs(x="Review Categories", y="Number of Participants")
+```
 
