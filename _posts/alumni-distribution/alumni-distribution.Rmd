@@ -1,18 +1,12 @@
 ---
 title: "Alumni Distribution"
 description: |
-  This is an analysis of GVSU alumni graduates.
-author:
-  - name: Debit paudel
-    url: {}
-  
-date: 2021-11-26
+  The map below shows the number of GVSU alumni as distributed in the different states of USA.
 output:
   distill::distill_article:
     self_contained: false
 ---
-
-
+It was observed that most (87%) GVSU graduates remain in Michigan after graduation.
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
@@ -44,6 +38,6 @@ plot_usmap(data=grouped_state, values="count_states", color='white', labels=FALS
                                              label = scales::number(count_states, accuracy = 1)), color = "white")
 
 ```
-This is the USA map showing the graduates distribution.
+
 
 

@@ -1,19 +1,16 @@
 ---
 title: "Career Center Review"
 description: |
-  A short description of the post.
-author:
-  - name: Debit paudel
+  Below is an analysis of the levels of satisfaction for various GVSU career center services. 
 output:
   distill::distill_article:
     self_contained: false
 ---
-
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+The results revealed that GVSU graduates had a general sense of satisfaction with the Career Center services across the board.
 
 ```{r}
 library(tidyverse)
@@ -49,11 +46,11 @@ arrange(desc(n))
 temp3<-temp3%>%rename(CC_job_Rating= CC_Interview_Preparation) 
 everything <-rbind(everything,temp3)
 everything<-everything%>%rename(Ratings= CC_job_Rating) 
-everything$Question <- c('Job Rating'
-                            ,'Job Rating'
-                            ,'Job Rating'
-                            ,'Job Rating'
-                            ,'Job Rating'
+everything$Question <- c('Job Search'
+                            ,'Job Search'
+                            ,'Job Search'
+                            ,'Job Search'
+                            ,'Job Search'
                            
                             ,'Drop in Advising'
                             ,'Drop in Advising'
@@ -84,11 +81,10 @@ everything %>%
   labs(x="Review Categories", y="Number of Participants")
 ```
 
+It was observed that most GVSU graduates had utilized the career center job and internship search services as well as the handshake job search web application to obtain employment after graduation.
+However, results showed that only about half of the 4000 respondents leveraged career center workshops and only a little over a half utilized on-campus interview practice offered by the career center. 
 
 ```{r}
-library(tidyverse)
-library(dplyr)
-test_alumni <- read_csv("data/alumni_data.csv")
 grouped_CC_review1<-test_alumni %>%  
   group_by(CC_Oncampus_Interview) %>% 
     filter(CC_Oncampus_Interview !="NA")%>% 
@@ -155,10 +151,9 @@ everything2 %>%
   labs(x="Review Categories", y="Number of Participants")
 ```
 
+This revealed the gap that exists in students making time to attend career workshops as well as the under-utilization of interview preparation services offered by the career center. 
+
 ```{r}
-library(tidyverse)
-library(dplyr)
-test_alumni <- read_csv("data/alumni_data.csv")
 grouped_CC_review2<-test_alumni %>%  
   group_by(CC_Resume_Cover_Letter_Review) %>% 
     filter(CC_Resume_Cover_Letter_Review !="NA")%>% 
@@ -209,4 +204,4 @@ everything3 %>%
   coord_flip() + 
   labs(x="Review Categories", y="Number of Participants")
 ```
-
+Therefore, we encourage all students to maximize the use of the career center services to prepare themselves for the job market.

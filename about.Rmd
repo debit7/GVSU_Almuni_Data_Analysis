@@ -1,9 +1,11 @@
 ---
-title: "About this blog"
+title: "GVSU Alumni Analyis Project"
 description: |
-  Some additional details about the blog
+  This project was conducted in order to look into GVSU graduates employment patterns. It also examined the effectiveness of the services offered by the GVSU Career center in assisting graduates to secure employment.
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+This is a report on a study conducted by Jae Mwangi and Debit Paudel to analyze the employment patterns of GVSU graduates. It was inspired by our curiosity to find out our job prospects after graduation.The main objective of this project was to obtain and communicate insights to other graduating students thinking about their job prospects. We hoped to have an overall idea of the current employment situation in terms of the skills demanded in the market and the locations where this demand is highest. We also set out to find out where GVSU students go after they graduate and the role of the Career Center in enabling graduates to find employment.
+
+The data used in this study was obtained from the career center which collects data from recent graduates by sending them an anonymous survey to fill on their employment statuses after graduation. Therefore, the confidentiality of the respondents of the survey was protected. This project was conducted in order to analyze the employment patterns of GVSU graduates. 
