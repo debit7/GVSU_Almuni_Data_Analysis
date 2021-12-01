@@ -11,9 +11,9 @@
     ],
     "date": "2021-11-27",
     "categories": [],
-    "contents": "\n\n# A tibble: 8,685 x 37\n      ID RecordedDate PrimaryStatusAfterGraduation     BranchOfService\n   <dbl> <chr>        <chr>                            <chr>          \n 1 30001 27-Jan-2020  Employed full time (on average … <NA>           \n 2 30002 12-Feb-2020  Planning to continue education … <NA>           \n 3 30003 03-Nov-2017  Employed full time (on average … <NA>           \n 4 30004 15-Sep-2016  Employed full time (on average … <NA>           \n 5 30005 31-Jan-2017  Employed full time (on average … <NA>           \n 6 30006 13-Jan-2021  Employed full time (on average … <NA>           \n 7 30007 18-Jul-2019  Employed full time (on average … <NA>           \n 8 30008 06-Jun-2017  Employed full time (on average … <NA>           \n 9 30009 24-Jun-2020  Seeking employment               <NA>           \n10 30010 16-Feb-2020  Employed full time (on average … <NA>           \n# … with 8,675 more rows, and 33 more variables:\n#   CareerMeetsExpectation <chr>, EmployingOrganization <chr>,\n#   JobTitle <chr>, State <chr>, City <chr>, Employer_Country <chr>,\n#   Compensation <chr>, Salary_range <chr>, Degree_required <chr>,\n#   Employment_offer <chr>, Employment_acceptance <chr>,\n#   Job_connection <chr>, Application_website <chr>,\n#   Other_job_connection <chr>, Graduate_School <chr>,\n#   Graduate_School_Location <chr>, Graduate_Degree_Country <chr>,\n#   Graduate_Program <chr>, Program_Type <chr>,\n#   Postgraduation_offer <chr>, CC_job_Rating <chr>,\n#   CC_Drop_in_Advising_CareerLab <chr>, CC_Handshake_Jobs <chr>,\n#   CC_Interview_Preparation <chr>, CC_Oncampus_Interview <chr>,\n#   CC_Networking_Strategies <chr>,\n#   CC_Career_Major_Exploration <chr>, CC_Fairs_Career_Events <chr>,\n#   CC_Resume_Cover_Letter_Review <chr>, CC_Career_Assessments <chr>,\n#   CC_Resume_Cover_Letter Review <chr>,\n#   Primary_Status_Matching_Expectations <chr>, CC_Workshops <chr>\n# A tibble: 8,685 x 3\n      ID Year_Recorded RecordedDate\n   <dbl>         <dbl> <date>      \n 1 30001          2020 2020-01-27  \n 2 30002          2020 2020-02-12  \n 3 30003          2017 2017-11-03  \n 4 30004          2016 2016-09-15  \n 5 30005          2017 2017-01-31  \n 6 30006          2021 2021-01-13  \n 7 30007          2019 2019-07-18  \n 8 30008          2017 2017-06-06  \n 9 30009          2020 2020-06-24  \n10 30010          2020 2020-02-16  \n# … with 8,675 more rows\n\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-11-27T18:50:55+00:00",
+    "contents": "\n\n\n\n\n\n2016\n\n\n\n\n2017\n\n\n\n\n2018\n\n\n\n\n2019\n\n\n\n\n2020\n\n\n\n\n2021\n\n\n\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nSeeking\n\n\n59\n\n\n15.86022\n\n\n201\n\n\n10.95965\n\n\n231\n\n\n12.38606\n\n\n192\n\n\n10.77441\n\n\n287\n\n\n15.43841\n\n\n21\n\n\n3.620690\n\n\nEnrolled\n\n\n40\n\n\n10.75269\n\n\n270\n\n\n14.72192\n\n\n259\n\n\n13.88740\n\n\n263\n\n\n14.75870\n\n\n340\n\n\n18.28940\n\n\n30\n\n\n5.172414\n\n\nEmployed\n\n\n273\n\n\n73.38710\n\n\n1363\n\n\n74.31843\n\n\n1375\n\n\n73.72654\n\n\n1327\n\n\n74.46689\n\n\n1232\n\n\n66.27219\n\n\n529\n\n\n91.206897\n\n\n\n\n\n",
+    "preview": "posts/yearly-employment-distribution/yearly-employment-distribution_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2021-12-01T19:41:35+00:00",
     "input_file": "yearly-employment-distribution.knit.md"
   },
   {
@@ -30,8 +30,8 @@
     "categories": [],
     "contents": "\n\n\n\nThis is the USA map showing the graduates distribution.\n\n\n\n",
     "preview": "posts/alumni-distribution/alumni-distribution_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-11-27T17:21:52+00:00",
-    "input_file": "alumni-distribution.knit.md"
+    "last_modified": "2021-12-01T01:09:42+00:00",
+    "input_file": {}
   },
   {
     "path": "posts/career-center-review/",
@@ -47,7 +47,7 @@
     "categories": [],
     "contents": "\n\n\n\n\n\n\n",
     "preview": "posts/career-center-review/career-center-review_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-11-27T17:17:51+00:00",
+    "last_modified": "2021-11-26T16:36:42+00:00",
     "input_file": {}
   },
   {
@@ -59,7 +59,7 @@
     "categories": [],
     "contents": "\n\n\n\n\nDebit Paudel\n\n\n\nData Scientist\n\n\nGrduate Research Assistant at GVSU\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiography\nI dont like describing Myself. Haha\nI write codes in C#, Python , R and .NET Frameworks Besides that, I’m also familiar with Microsoft Products like PowerBI, Azure Machine Learning.\nFor pleasure, I enjoy books 📖, cooking 🍳, music 🎶, travel ✈.\nYou might want to read my Data Science Blogs.\n\nInterests\nData Science / Machine Learning\nNatural Language Processing\n\n\nEducation\n🎓 MS Data Science & Analytics , GVSU\n🎓 B.E. Electronics & Comm., Tribhuvan University\n\n\n\n\nSkills\n\n\nR Programming\nApply data science with R using tidyverse, automate business reports, build dashboard with R / Shiny.\n\n\n\nData Visualization\nVisualize the data using different tools like ggplot2, matplotlib, seaborn, tableau, PowerBI etc.\n\n\n\nPython\nHave Python development experience for Data Science projects.\n\n\n\nSQL\nHave working experience of SQL database like PostgreSQL, Microsoft SQL Server etc.\n\n\n\nProject Management\nHave lead the team members in Data Science projects. Have extensively used GitHub / GitLab for project management.\n\n\n\nDocker\nDeployed the Data Science application with Docker along with CI/CD tools.\n\n",
     "preview": {},
-    "last_modified": "2021-11-26T17:35:10+00:00",
+    "last_modified": "2021-11-25T16:54:42+00:00",
     "input_file": {}
   }
 ]

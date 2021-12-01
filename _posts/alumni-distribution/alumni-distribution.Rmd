@@ -5,6 +5,7 @@ description: |
 author:
   - name: Debit paudel
     url: {}
+  
 date: 2021-11-26
 output:
   distill::distill_article:
@@ -20,6 +21,7 @@ library(tidyverse)
 library(dplyr)
 library(usmap)
 library(ggplot2)
+
 test_alumni <- read_csv("data/alumni_data.csv")
 grouped_state<-test_alumni %>% 
   group_by(State) %>% 
