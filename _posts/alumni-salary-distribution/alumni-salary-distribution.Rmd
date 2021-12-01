@@ -1,0 +1,43 @@
+---
+title: "Alumni Salary Distribution"
+description: |
+  The chart below shows the salary ranges for GVSU almni.
+author:
+  - name: Debit and Jae Mwangi
+    url: {}
+date: 11-30-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+It was observed that the highest number of graduates earn either below $20,000 or an average of $40,000 annually. We concluded that these results exhibit those who did not utilized their degree versus those who did respectively. However, it is crucial to note that cumulatively, most graduates earn above $20,000 yearly.
+
+```{r}
+library(tidyverse)
+library(dplyr)
+alumni<-read_csv("data/alumni_data.csv")
+grouped_salary<-alumni %>% 
+  group_by(Salary_range) %>% 
+  filter(Salary_range !="NA")%>% 
+  summarise(number_of_graduates = n())
+#lumped_data<-alumni %>%
+  #mutate(Salary_range = fct_lump(Salary_range,n=4)%>%fct_infreq()) 
+#h<-ggplot(lumped_data, aes(Salary_range)) +
+ # geom_bar()
+i<-ggplot(grouped_salary, aes(x=Salary_range, y=number_of_graduates)) + 
+  geom_bar(stat = "identity", width=0.2) 
+#h + coord_flip()
+i + coord_flip()
+
+##stuffs<-grouped_salary%>%summary(number_of_graduates)
+#stuffs
+```
+
+
+

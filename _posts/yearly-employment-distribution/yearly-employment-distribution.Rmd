@@ -1,17 +1,14 @@
 ---
 title: "Yearly Employment Distribution"
 description: |
-  A short description of the post.
+  Below is a time series analysis of the number of the number of employed GVSU graduates from 2016 to 2021.
 author:
-  - name: Debit paudel
+  - name: Debit paudel and Jae Mwangi
     url: {}
-date: 2021-11-27
 output:
   distill::distill_article:
     self_contained: false
 ---
-
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
