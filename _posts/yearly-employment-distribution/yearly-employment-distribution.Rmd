@@ -5,7 +5,7 @@ description: |
 author:
   - name: Debit paudel
     url: {}
-date: 11-27-2021
+date: 2021-11-27
 output:
   distill::distill_article:
     self_contained: false
@@ -15,16 +15,89 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
 ```{r}
 library(tidyverse)
 library(lubridate)
+library(ggplot2)
+library(dplyr)
+
+specify_decimal <- function(x, k) trimws(format(round(x, k), nsmall=k))
 alumni_data <- read_csv("data/alumni_data.csv")
 
 alumni_data$RecordedDate<-str_c(substr(alumni_data$RecordedDate, 1,2),"-",substr(alumni_data$RecordedDate, 3,5),"-",substr(alumni_data$RecordedDate, 6,9)) 
-alumni_data
+
 alumni_data$RecordedDate<-as.Date(alumni_data$RecordedDate," %d-%b-%Y")
 alumni_data$Year_Recorded<-year(alumni_data$RecordedDate)
-alumni_data%>%select(ID,Year_Recorded,RecordedDate)
+alumni_data<-alumni_data%>%select(ID,Year_Recorded,RecordedDate,PrimaryStatusAfterGraduation)
+
+# grouped_year<-alumni_data %>% 
+#   group_by(Year_Recorded,PrimaryStatusAfterGraduation) %>% 
+#    filter(PrimaryStatusAfterGraduation !="NA", Year_Recorded !="NA")%>% 
+#   summarise(Graduated_numbers = n()) %>%
+# arrange(desc(Year_Recorded)) 
+
+	alumni_data$PrimaryStatusAfterGraduation <- str_extract(alumni_data$PrimaryStatusAfterGraduation,"(\\w+)")
+grouped_year<-alumni_data %>% 
+  group_by(Year_Recorded,PrimaryStatusAfterGraduation) %>% 
+   filter(PrimaryStatusAfterGraduation=="Employed"| PrimaryStatusAfterGraduation=="Seeking" |PrimaryStatusAfterGraduation=="Enrolled")%>% 
+  summarise(Graduated_numbers = n()) %>%
+arrange(desc(Year_Recorded)) 
+
+
+ 
+
+grouped_year <- grouped_year %>%                                    # Calculate percentage by group
+  group_by(Year_Recorded) %>%
+  mutate(Percentage = (Graduated_numbers*100) / sum(Graduated_numbers)) 
+
+# grouped_year$Percentage <-specify_decimal(grouped_year$Percentage, 2) 
+# grouped_year$Percentage <- paste(grouped_year$Percentage,"%")
+
+
+
+
+# grouped_year %>% 
+#   mutate_at(vars(PrimaryStatusAfterGraduation, Year_Recorded,Graduated_numbers ), funs(as.character)) 
+
+grouped_year<-grouped_year %>% 
+       mutate(PrimaryStatusAfterGraduation = case_when(PrimaryStatusAfterGraduation == "Seeking" ~ "Un-Employed", 
+                             PrimaryStatusAfterGraduation == "Enrolled" ~ "Started-Studying",
+                              PrimaryStatusAfterGraduation == "Employed" ~ "Employed",
+                             ))
+
+data <- data.frame(PrimaryStatusAfterGraduation = c(grouped_year$PrimaryStatusAfterGraduation),
+                   Year_Recorded = c(grouped_year$Year_Recorded),
+                   Graduated_numbers = c(grouped_year$Graduated_numbers),
+                   Percent = c(grouped_year$Percentage))
+
+data_for_ts<-data %>%
+  filter(PrimaryStatusAfterGraduation=="Employed")
+
+ data_for_ts<-data_for_ts%>%rename(Employed_Percentage= Percent) 
+
+
+ ggplot( data = data_for_ts, aes( Year_Recorded, Employed_Percentage )) + geom_line() 
+
+v2 <- xtabs(cbind(Graduated_numbers, Percent) ~ PrimaryStatusAfterGraduation + Year_Recorded, data)
+
+
+
+Seeking <- apply(v2[3,,], 1, c)
+dim(Seeking) <- NULL
+Enrolled <- apply(v2[2,,], 1, c)
+dim(Enrolled) <- NULL
+Employed <- apply(v2[1,,], 1, c)
+dim(Employed) <- NULL
+
+require(knitr)
+require(kableExtra)
+
+
+add_header_above(kable(rbind(Seeking, Enrolled,Employed), col.names = rep(c("Count", "Percent"), 6)),
+                 c("", "2016" = 2, "2017" = 2, "2018" = 2 , "2019" = 2 , "2020" = 2 , "2021" = 2 ))
+
+
 ```
 
 

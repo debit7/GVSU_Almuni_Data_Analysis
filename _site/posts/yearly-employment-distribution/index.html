@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
 <title>GVSU Alumni Data Analysis: Yearly Employment Distribution</title>
@@ -112,12 +113,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Yearly Employment Distribution"]},{"type":"character","attributes":{},"value":["A short description of the post."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Debit paudel"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["11-27-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Yearly Employment Distribution"]},{"type":"character","attributes":{},"value":["A short description of the post."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Debit paudel"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["2021-11-27"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["data/alumni_data.csv"]}
+  {"type":"character","attributes":{},"value":["data/alumni_data.csv","yearly-employment-distribution_files/anchor-4.2.2/anchor.min.js","yearly-employment-distribution_files/bowser-1.9.3/bowser.min.js","yearly-employment-distribution_files/distill-2.2.21/template.v2.js","yearly-employment-distribution_files/figure-html5/unnamed-chunk-1-1.png","yearly-employment-distribution_files/header-attrs-2.11/header-attrs.js","yearly-employment-distribution_files/header-attrs-2.9/header-attrs.js","yearly-employment-distribution_files/jquery-1.11.3/jquery.min.js","yearly-employment-distribution_files/jquery-3.6.0/jquery-3.6.0.js","yearly-employment-distribution_files/jquery-3.6.0/jquery-3.6.0.min.js","yearly-employment-distribution_files/jquery-3.6.0/jquery-3.6.0.min.map","yearly-employment-distribution_files/kePrint-0.0.1/kePrint.js","yearly-employment-distribution_files/lightable-0.0.1/lightable.css","yearly-employment-distribution_files/popper-2.6.0/popper.min.js","yearly-employment-distribution_files/tippy-6.2.7/tippy-bundle.umd.min.js","yearly-employment-distribution_files/tippy-6.2.7/tippy-light-border.css","yearly-employment-distribution_files/tippy-6.2.7/tippy.css","yearly-employment-distribution_files/tippy-6.2.7/tippy.umd.min.js","yearly-employment-distribution_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -463,7 +464,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1870,7 +1871,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2041,8 +2045,10 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.9/header-attrs.js"></script>
-  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2094,57 +2100,217 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="d-byline">
   Debit paudel true 
   
-<br/>11-27-2021
+<br/>2021-11-27
 </div>
 
 <div class="d-article">
 <div class="layout-chunk" data-layout="l-body">
-<pre><code># A tibble: 8,685 x 37
-      ID RecordedDate PrimaryStatusAfterGraduation     BranchOfService
-   &lt;dbl&gt; &lt;chr&gt;        &lt;chr&gt;                            &lt;chr&gt;          
- 1 30001 27-Jan-2020  Employed full time (on average … &lt;NA&gt;           
- 2 30002 12-Feb-2020  Planning to continue education … &lt;NA&gt;           
- 3 30003 03-Nov-2017  Employed full time (on average … &lt;NA&gt;           
- 4 30004 15-Sep-2016  Employed full time (on average … &lt;NA&gt;           
- 5 30005 31-Jan-2017  Employed full time (on average … &lt;NA&gt;           
- 6 30006 13-Jan-2021  Employed full time (on average … &lt;NA&gt;           
- 7 30007 18-Jul-2019  Employed full time (on average … &lt;NA&gt;           
- 8 30008 06-Jun-2017  Employed full time (on average … &lt;NA&gt;           
- 9 30009 24-Jun-2020  Seeking employment               &lt;NA&gt;           
-10 30010 16-Feb-2020  Employed full time (on average … &lt;NA&gt;           
-# … with 8,675 more rows, and 33 more variables:
-#   CareerMeetsExpectation &lt;chr&gt;, EmployingOrganization &lt;chr&gt;,
-#   JobTitle &lt;chr&gt;, State &lt;chr&gt;, City &lt;chr&gt;, Employer_Country &lt;chr&gt;,
-#   Compensation &lt;chr&gt;, Salary_range &lt;chr&gt;, Degree_required &lt;chr&gt;,
-#   Employment_offer &lt;chr&gt;, Employment_acceptance &lt;chr&gt;,
-#   Job_connection &lt;chr&gt;, Application_website &lt;chr&gt;,
-#   Other_job_connection &lt;chr&gt;, Graduate_School &lt;chr&gt;,
-#   Graduate_School_Location &lt;chr&gt;, Graduate_Degree_Country &lt;chr&gt;,
-#   Graduate_Program &lt;chr&gt;, Program_Type &lt;chr&gt;,
-#   Postgraduation_offer &lt;chr&gt;, CC_job_Rating &lt;chr&gt;,
-#   CC_Drop_in_Advising_CareerLab &lt;chr&gt;, CC_Handshake_Jobs &lt;chr&gt;,
-#   CC_Interview_Preparation &lt;chr&gt;, CC_Oncampus_Interview &lt;chr&gt;,
-#   CC_Networking_Strategies &lt;chr&gt;,
-#   CC_Career_Major_Exploration &lt;chr&gt;, CC_Fairs_Career_Events &lt;chr&gt;,
-#   CC_Resume_Cover_Letter_Review &lt;chr&gt;, CC_Career_Assessments &lt;chr&gt;,
-#   CC_Resume_Cover_Letter Review &lt;chr&gt;,
-#   Primary_Status_Matching_Expectations &lt;chr&gt;, CC_Workshops &lt;chr&gt;</code></pre>
-<pre><code># A tibble: 8,685 x 3
-      ID Year_Recorded RecordedDate
-   &lt;dbl&gt;         &lt;dbl&gt; &lt;date&gt;      
- 1 30001          2020 2020-01-27  
- 2 30002          2020 2020-02-12  
- 3 30003          2017 2017-11-03  
- 4 30004          2016 2016-09-15  
- 5 30005          2017 2017-01-31  
- 6 30006          2021 2021-01-13  
- 7 30007          2019 2019-07-18  
- 8 30008          2017 2017-06-06  
- 9 30009          2020 2020-06-24  
-10 30010          2020 2020-02-16  
-# … with 8,675 more rows</code></pre>
+<img src="yearly-employment-distribution_files/figure-html5/unnamed-chunk-1-1.png" width="624" />
+<table>
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+2016
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+2017
+</div>
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+2018
+</div>
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+2019
+</div>
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+2020
+</div>
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+2021
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+Count
+</th>
+<th style="text-align:right;">
+Percent
+</th>
+<th style="text-align:right;">
+Count
+</th>
+<th style="text-align:right;">
+Percent
+</th>
+<th style="text-align:right;">
+Count
+</th>
+<th style="text-align:right;">
+Percent
+</th>
+<th style="text-align:right;">
+Count
+</th>
+<th style="text-align:right;">
+Percent
+</th>
+<th style="text-align:right;">
+Count
+</th>
+<th style="text-align:right;">
+Percent
+</th>
+<th style="text-align:right;">
+Count
+</th>
+<th style="text-align:right;">
+Percent
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Seeking
+</td>
+<td style="text-align:right;">
+59
+</td>
+<td style="text-align:right;">
+15.86022
+</td>
+<td style="text-align:right;">
+201
+</td>
+<td style="text-align:right;">
+10.95965
+</td>
+<td style="text-align:right;">
+231
+</td>
+<td style="text-align:right;">
+12.38606
+</td>
+<td style="text-align:right;">
+192
+</td>
+<td style="text-align:right;">
+10.77441
+</td>
+<td style="text-align:right;">
+287
+</td>
+<td style="text-align:right;">
+15.43841
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+3.620690
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Enrolled
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+10.75269
+</td>
+<td style="text-align:right;">
+270
+</td>
+<td style="text-align:right;">
+14.72192
+</td>
+<td style="text-align:right;">
+259
+</td>
+<td style="text-align:right;">
+13.88740
+</td>
+<td style="text-align:right;">
+263
+</td>
+<td style="text-align:right;">
+14.75870
+</td>
+<td style="text-align:right;">
+340
+</td>
+<td style="text-align:right;">
+18.28940
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+5.172414
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Employed
+</td>
+<td style="text-align:right;">
+273
+</td>
+<td style="text-align:right;">
+73.38710
+</td>
+<td style="text-align:right;">
+1363
+</td>
+<td style="text-align:right;">
+74.31843
+</td>
+<td style="text-align:right;">
+1375
+</td>
+<td style="text-align:right;">
+73.72654
+</td>
+<td style="text-align:right;">
+1327
+</td>
+<td style="text-align:right;">
+74.46689
+</td>
+<td style="text-align:right;">
+1232
+</td>
+<td style="text-align:right;">
+66.27219
+</td>
+<td style="text-align:right;">
+529
+</td>
+<td style="text-align:right;">
+91.206897
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
