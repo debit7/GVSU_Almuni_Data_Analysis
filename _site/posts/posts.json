@@ -12,6 +12,18 @@
     "input_file": {}
   },
   {
+    "path": "posts/alumni-distribution/",
+    "title": "Alumni Distribution",
+    "description": "The map below shows the number of GVSU alumni as distributed in the different states of USA.",
+    "author": [],
+    "date": "2021-12-02",
+    "categories": [],
+    "contents": "\nIt was observed that most (87%) GVSU graduates remain in Michigan after graduation.\n\n\n\n\n\n\n",
+    "preview": "posts/alumni-distribution/alumni-distribution_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2021-12-02T04:14:45+00:00",
+    "input_file": "alumni-distribution.knit.md"
+  },
+  {
     "path": "posts/alumni-salary-distribution/",
     "title": "Alumni Salary Distribution",
     "description": "The chart below shows the salary ranges for GVSU almni.",
@@ -60,23 +72,6 @@
     "contents": "\n\n\n\n\n\n2016\n\n\n\n\n2017\n\n\n\n\n2018\n\n\n\n\n2019\n\n\n\n\n2020\n\n\n\n\n2021\n\n\n\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nSeeking\n\n\n59\n\n\n15.86022\n\n\n201\n\n\n10.95965\n\n\n231\n\n\n12.38606\n\n\n192\n\n\n10.77441\n\n\n287\n\n\n15.43841\n\n\n21\n\n\n3.620690\n\n\nEnrolled\n\n\n40\n\n\n10.75269\n\n\n270\n\n\n14.72192\n\n\n259\n\n\n13.88740\n\n\n263\n\n\n14.75870\n\n\n340\n\n\n18.28940\n\n\n30\n\n\n5.172414\n\n\nEmployed\n\n\n273\n\n\n73.38710\n\n\n1363\n\n\n74.31843\n\n\n1375\n\n\n73.72654\n\n\n1327\n\n\n74.46689\n\n\n1232\n\n\n66.27219\n\n\n529\n\n\n91.206897\n\n\n\n\n\n",
     "preview": "posts/yearly-employment-distribution/yearly-employment-distribution_files/figure-html5/unnamed-chunk-1-1.png",
     "last_modified": "2021-12-01T19:41:35+00:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/alumni-distribution/",
-    "title": "Alumni Distribution",
-    "description": "This is an analysis of GVSU alumni graduates.",
-    "author": [
-      {
-        "name": "Debit paudel",
-        "url": {}
-      }
-    ],
-    "date": "2021-11-26",
-    "categories": [],
-    "contents": "\n\n\n\nThis is the USA map showing the graduates distribution.\n\n\n\n",
-    "preview": "posts/alumni-distribution/alumni-distribution_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-12-01T23:00:10+00:00",
     "input_file": {}
   }
 ]
