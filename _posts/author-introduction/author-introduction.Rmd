@@ -1,6 +1,6 @@
 ---
-title: "Author Inroduction"
-description: "Debit is a Student of MS in Data Science and Analytics."
+title: "Author Introduction"
+description: "Debit and Jae are Students of MS in Data Science and Analytics."
 site: distill::distill_website
 output:
   distill::distill_article:
@@ -19,7 +19,7 @@ output:
 Data Scientist
 :::
 ::: {.company}
-Grduate Research Assistant at GVSU
+Graduate Research Assistant at GVSU
 :::
 ::: {.social-icons}
 <!-- <ul> -->
@@ -106,3 +106,98 @@ Have working experience of SQL database like PostgreSQL, Microsoft SQL Server et
 :::
 :::
 
+---
+
+::: {.row}
+::: {.column .profile .left}
+<img src="Jae.jpg" alt="Jae Mwangi"/>
+<div itemprop="name"><h2>Jae Mwangi</h2></div>
+::: {.job-title}
+Data Analyst
+:::
+::: {.company}
+Public Health Administrator at GVSU
+:::
+::: {.social-icons}
+<!-- <ul> -->
+<!-- <li> -->
+
+<!-- <a href="/#contact" aria-label="envelope"> <i class="fas fa-envelope -->
+<!-- pro-icon"></i> </a> -->
+
+<!-- </li> -->
+- [<i class="fab fa-github pro-icon"></i>](https://github.com/debit7) 
+- [<i class="fab fa-linkedin pro-icon"></i>](https://linkedin.com/in/debit-paudel)
+- [<i class="fab fa-instagram pro-icon"></i>](https://www.instagram.com/debit7)
+:::
+:::
+
+::: {.column .right itemprop="description"}
+<b class="bio">Biography</b>
+
+I enjoy seeing data come to life through visualizations in R Grammar of Graphics. I am also familiar with various database management systems such as SQL, noSQL databases (MongoDB, Redis and Neo4j). I am also practicing my Python skills.  
+
+I enjoy reading 📖, outdoors activities, music 🎶, travel ✈.
+
+You might want to read my [**Data Science Blogs**](./posts#category:Data_Science).
+
+::: {.column .leftly}
+**Interests**
+
+-   Data Analytics 
+:::
+
+::: {.column .rightly}
+**Education**
+
+-   [🎓]{.hat} MS Data Science & Analytics , GVSU
+-   [🎓]{.hat} PGDP Financial Mathematics, University of Exeter
+:::
+:::
+:::
+
+</br></br></br>
+
+::: {.row .skill}
+
+## Skills {.skills}
+
+::: {.column .colskill}
+<i class="fab fa-r-project"></i>
+
+#### R Programming
+
+Apply data science with R using tidyverse, automate business reports, build dashboard with R / Shiny.
+:::
+
+::: {.column .colskill}
+<i class="fas fa-chart-area"></i>
+
+#### Data Visualization
+
+Visualize the data using different tools like ggplot2, matplotlib, seaborn, tableau, PowerBI etc.
+:::
+
+::: {.column .colskill}
+<i class="fab fa-python"></i>
+
+#### Python
+
+Have graduate coursework experience in basic Python projects.
+:::
+
+::: {.column .colskill}
+<i class="fas fa-database"></i>
+
+#### SQL
+
+Have coursework experience in SQL projects.
+:::
+
+::: {.column .colskill}
+
+
+:::
+:::
+
+---

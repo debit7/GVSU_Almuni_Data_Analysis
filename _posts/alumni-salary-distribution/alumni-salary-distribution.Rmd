@@ -25,14 +25,16 @@ alumni<-read_csv("data/alumni_data.csv")
 grouped_salary<-alumni %>% 
   group_by(Salary_range) %>% 
   filter(Salary_range !="NA",Salary_range !="Greater than $100")%>% 
-  summarise(number_of_graduates = n())
+  summarise(Graduates= n())
 #lumped_data<-alumni %>%
   #mutate(Salary_range = fct_lump(Salary_range,n=4)%>%fct_infreq()) 
 #h<-ggplot(lumped_data, aes(Salary_range)) +
  # geom_bar()
-i<-ggplot(grouped_salary, aes(x=Salary_range, y=number_of_graduates)) + 
-  geom_bar(stat = "identity", width=0.2) 
 #h + coord_flip()
+i<-ggplot(grouped_salary, aes(x=Salary_range, y=Graduates)) +
+  ggtitle("Plot of Alumni Salary Ranges by Number of Graduates") +
+  xlab("Salary") + ylab("Graduates") +
+  geom_bar(stat = "identity", width=0.2)
 i + coord_flip()
 
 ##stuffs<-grouped_salary%>%summary(number_of_graduates)
