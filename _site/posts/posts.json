@@ -1,5 +1,17 @@
 [
   {
+    "path": "posts/alumni-distribution/",
+    "title": "Alumni Distribution",
+    "description": "The map below shows the number of GVSU alumni as distributed in the different states of USA.",
+    "author": [],
+    "date": "2021-12-02",
+    "categories": [],
+    "contents": "\nIt was observed that most (87%) GVSU graduates remain in Michigan after graduation.\n\n\n\n\n\n\n",
+    "preview": "posts/alumni-distribution/alumni-distribution_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2021-12-02T04:14:46+00:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/author-introduction/",
     "title": "Author Inroduction",
     "description": "Debit is a Student of MS in Data Science and Analytics.",
@@ -10,18 +22,6 @@
     "preview": {},
     "last_modified": "2021-12-02T00:00:58+00:00",
     "input_file": {}
-  },
-  {
-    "path": "posts/alumni-distribution/",
-    "title": "Alumni Distribution",
-    "description": "The map below shows the number of GVSU alumni as distributed in the different states of USA.",
-    "author": [],
-    "date": "2021-12-02",
-    "categories": [],
-    "contents": "\nIt was observed that most (87%) GVSU graduates remain in Michigan after graduation.\n\n\n\n\n\n\n",
-    "preview": "posts/alumni-distribution/alumni-distribution_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-12-02T04:14:45+00:00",
-    "input_file": "alumni-distribution.knit.md"
   },
   {
     "path": "posts/alumni-salary-distribution/",

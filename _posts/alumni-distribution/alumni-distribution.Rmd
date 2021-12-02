@@ -2,6 +2,10 @@
 title: "Alumni Distribution"
 description: |
   The map below shows the number of GVSU alumni as distributed in the different states of USA.
+author:
+  - name: Debit and Jae Mwangi
+    url: {}
+date: 11-30-2021
 output:
   distill::distill_article:
     self_contained: false
