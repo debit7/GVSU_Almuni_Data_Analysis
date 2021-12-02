@@ -1,7 +1,7 @@
 ---
 title: "Yearly Employment Distribution"
 description: |
-  Below is a time series analysis of the number of the number of employed GVSU graduates from 2016 to 2021.
+  Below is a time series analysis of the number  of employed GVSU graduates from 2016 to 2021.
 author:
   - name: Debit paudel and Jae Mwangi
     url: {}
@@ -18,6 +18,7 @@ library(tidyverse)
 library(lubridate)
 library(ggplot2)
 library(dplyr)
+
 
 specify_decimal <- function(x, k) trimws(format(round(x, k), nsmall=k))
 alumni_data <- read_csv("data/alumni_data.csv")
