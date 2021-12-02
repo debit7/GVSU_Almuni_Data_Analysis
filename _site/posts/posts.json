@@ -1,5 +1,51 @@
 [
   {
+    "path": "posts/author-introduction/",
+    "title": "Author Inroduction",
+    "description": "Debit is a Student of MS in Data Science and Analytics.",
+    "author": [],
+    "date": "2021-12-01",
+    "categories": [],
+    "contents": "\n\n\n\n\nDebit Paudel\n\n\n\nData Scientist\n\n\nGrduate Research Assistant at GVSU\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiography\nI dont like describing Myself. Haha\nI write codes in C#, Python , R and .NET Frameworks Besides that, I’m also familiar with Microsoft Products like PowerBI, Azure Machine Learning.\nFor pleasure, I enjoy books 📖, cooking 🍳, music 🎶, travel ✈.\nYou might want to read my Data Science Blogs.\n\nInterests\nData Science / Machine Learning\nNatural Language Processing\n\n\nEducation\n🎓 MS Data Science & Analytics , GVSU\n🎓 B.E. Electronics & Comm., Tribhuvan University\n\n\n\n\nSkills\n\n\nR Programming\nApply data science with R using tidyverse, automate business reports, build dashboard with R / Shiny.\n\n\n\nData Visualization\nVisualize the data using different tools like ggplot2, matplotlib, seaborn, tableau, PowerBI etc.\n\n\n\nPython\nHave Python development experience for Data Science projects.\n\n\n\nSQL\nHave working experience of SQL database like PostgreSQL, Microsoft SQL Server etc.\n\n\n\nProject Management\nHave lead the team members in Data Science projects. Have extensively used GitHub / GitLab for project management.\n\n\n\nDocker\nDeployed the Data Science application with Docker along with CI/CD tools.\n\n\n\n\n\nDebit Paudel\n\n\n\nData Scientist\n\n\nGrduate Research Assistant at GVSU\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiography\nI dont like describing Myself. Haha\nI write codes in C#, Python , R and .NET Frameworks Besides that, I’m also familiar with Microsoft Products like PowerBI, Azure Machine Learning.\nFor pleasure, I enjoy books 📖, cooking 🍳, music 🎶, travel ✈.\nYou might want to read my Data Science Blogs.\n\nInterests\nData Science / Machine Learning\nNatural Language Processing\n\n\nEducation\n🎓 MS Data Science & Analytics , GVSU\n🎓 B.E. Electronics & Comm., Tribhuvan University\n\n\n\n\nSkills\n\n\nR Programming\nApply data science with R using tidyverse, automate business reports, build dashboard with R / Shiny.\n\n\n\nData Visualization\nVisualize the data using different tools like ggplot2, matplotlib, seaborn, tableau, PowerBI etc.\n\n\n\nPython\nHave Python development experience for Data Science projects.\n\n\n\nSQL\nHave working experience of SQL database like PostgreSQL, Microsoft SQL Server etc.\n\n\n\nProject Management\nHave lead the team members in Data Science projects. Have extensively used GitHub / GitLab for project management.\n\n\n\nDocker\nDeployed the Data Science application with Docker along with CI/CD tools.\n\n",
+    "preview": {},
+    "last_modified": "2021-12-01T23:03:09+00:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/alumni-salary-distribution/",
+    "title": "Alumni Salary Distribution",
+    "description": "The chart below shows the salary ranges for GVSU almni.",
+    "author": [
+      {
+        "name": "Debit and Jae Mwangi",
+        "url": {}
+      }
+    ],
+    "date": "2021-11-30",
+    "categories": [],
+    "contents": "\nIt was observed that the highest number of graduates earn either below $20,000 or an average of $40,000 annually. We concluded that these results exhibit those who did not utilized their degree versus those who did respectively. However, it is crucial to note that cumulatively, most graduates earn above $20,000 yearly.\n\n\n\n\n\n\n",
+    "preview": "posts/alumni-salary-distribution/alumni-salary-distribution_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2021-12-01T23:00:20+00:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/career-center-review/",
+    "title": "Career Center Review",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Debit paudel",
+        "url": {}
+      }
+    ],
+    "date": "2021-11-28",
+    "categories": [],
+    "contents": "\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "preview": "posts/career-center-review/career-center-review_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2021-12-01T23:00:10+00:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/yearly-employment-distribution/",
     "title": "Yearly Employment Distribution",
     "description": "A short description of the post.",
@@ -14,7 +60,7 @@
     "contents": "\n\n\n\n\n\n2016\n\n\n\n\n2017\n\n\n\n\n2018\n\n\n\n\n2019\n\n\n\n\n2020\n\n\n\n\n2021\n\n\n\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nSeeking\n\n\n59\n\n\n15.86022\n\n\n201\n\n\n10.95965\n\n\n231\n\n\n12.38606\n\n\n192\n\n\n10.77441\n\n\n287\n\n\n15.43841\n\n\n21\n\n\n3.620690\n\n\nEnrolled\n\n\n40\n\n\n10.75269\n\n\n270\n\n\n14.72192\n\n\n259\n\n\n13.88740\n\n\n263\n\n\n14.75870\n\n\n340\n\n\n18.28940\n\n\n30\n\n\n5.172414\n\n\nEmployed\n\n\n273\n\n\n73.38710\n\n\n1363\n\n\n74.31843\n\n\n1375\n\n\n73.72654\n\n\n1327\n\n\n74.46689\n\n\n1232\n\n\n66.27219\n\n\n529\n\n\n91.206897\n\n\n\n\n\n",
     "preview": "posts/yearly-employment-distribution/yearly-employment-distribution_files/figure-html5/unnamed-chunk-1-1.png",
     "last_modified": "2021-12-01T19:41:35+00:00",
-    "input_file": "yearly-employment-distribution.knit.md"
+    "input_file": {}
   },
   {
     "path": "posts/alumni-distribution/",
@@ -30,36 +76,7 @@
     "categories": [],
     "contents": "\n\n\n\nThis is the USA map showing the graduates distribution.\n\n\n\n",
     "preview": "posts/alumni-distribution/alumni-distribution_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-12-01T01:09:42+00:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/career-center-review/",
-    "title": "Career Center Review",
-    "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Debit paudel",
-        "url": {}
-      }
-    ],
-    "date": "2021-11-26",
-    "categories": [],
-    "contents": "\n\n\n\n\n\n\n",
-    "preview": "posts/career-center-review/career-center-review_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-11-26T16:36:42+00:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/author-introduction/",
-    "title": "Author Inroduction",
-    "description": "Debit is a Student of MS in Data Science and Analytics.",
-    "author": [],
-    "date": "2021-11-24",
-    "categories": [],
-    "contents": "\n\n\n\n\nDebit Paudel\n\n\n\nData Scientist\n\n\nGrduate Research Assistant at GVSU\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiography\nI dont like describing Myself. Haha\nI write codes in C#, Python , R and .NET Frameworks Besides that, I’m also familiar with Microsoft Products like PowerBI, Azure Machine Learning.\nFor pleasure, I enjoy books 📖, cooking 🍳, music 🎶, travel ✈.\nYou might want to read my Data Science Blogs.\n\nInterests\nData Science / Machine Learning\nNatural Language Processing\n\n\nEducation\n🎓 MS Data Science & Analytics , GVSU\n🎓 B.E. Electronics & Comm., Tribhuvan University\n\n\n\n\nSkills\n\n\nR Programming\nApply data science with R using tidyverse, automate business reports, build dashboard with R / Shiny.\n\n\n\nData Visualization\nVisualize the data using different tools like ggplot2, matplotlib, seaborn, tableau, PowerBI etc.\n\n\n\nPython\nHave Python development experience for Data Science projects.\n\n\n\nSQL\nHave working experience of SQL database like PostgreSQL, Microsoft SQL Server etc.\n\n\n\nProject Management\nHave lead the team members in Data Science projects. Have extensively used GitHub / GitLab for project management.\n\n\n\nDocker\nDeployed the Data Science application with Docker along with CI/CD tools.\n\n",
-    "preview": {},
-    "last_modified": "2021-11-25T16:54:42+00:00",
+    "last_modified": "2021-12-01T23:00:10+00:00",
     "input_file": {}
   }
 ]
