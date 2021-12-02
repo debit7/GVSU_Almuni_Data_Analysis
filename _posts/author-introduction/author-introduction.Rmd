@@ -101,18 +101,8 @@ Have working experience of SQL database like PostgreSQL, Microsoft SQL Server et
 :::
 
 ::: {.column .colskill}
-<i class="fas fa-tasks"></i>
 
-#### Project Management
 
-Have lead the team members in Data Science projects. Have extensively used GitHub / GitLab for project management.
-:::
-
-::: {.column .colskill}
-<i class="fab fa-docker"></i>
-
-#### Docker
-
-Deployed the Data Science application with Docker along with CI/CD tools.
 :::
 :::
+
