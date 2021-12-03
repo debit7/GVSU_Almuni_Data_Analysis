@@ -38,9 +38,7 @@ Graduate Research Assistant at GVSU
 ::: {.column .right itemprop="description"}
 <b class="bio">Biography</b>
 
-I dont like describing Myself. Haha
-
-I write codes in C#, Python , R  and .NET Frameworks  Besides that, I'm also familiar with Microsoft Products like PowerBI, Azure Machine Learning.
+I write codes in C#, Python , R  and .NET Frameworks  Besides that, I'm also familiar with Machine Learning,Image Processing,Deep Learning, SQL and NoSQL databases.
 
 For pleasure, I enjoy books 📖, cooking 🍳, music 🎶, travel ✈.
 
@@ -50,7 +48,7 @@ You might want to read my [**Data Science Blogs**](./posts#category:Data_Science
 **Interests**
 
 -   Data Science / Machine Learning
--   Natural Language Processing
+-   Deep Learning
 :::
 
 ::: {.column .rightly}
@@ -73,7 +71,7 @@ You might want to read my [**Data Science Blogs**](./posts#category:Data_Science
 
 #### R Programming
 
-Apply data science with R using tidyverse, automate business reports, build dashboard with R / Shiny.
+Apply data science with R using tidyverse, automate business reports, build  distill website  and R shiny app.
 :::
 
 ::: {.column .colskill}
@@ -81,7 +79,7 @@ Apply data science with R using tidyverse, automate business reports, build dash
 
 #### Data Visualization
 
-Visualize the data using different tools like ggplot2, matplotlib, seaborn, tableau, PowerBI etc.
+Visualize the data using different tools like ggplot2, matplotlib, seaborn etc.
 :::
 
 ::: {.column .colskill}
@@ -89,7 +87,7 @@ Visualize the data using different tools like ggplot2, matplotlib, seaborn, tabl
 
 #### Python
 
-Have Python development experience for Data Science projects.
+Doing Research Project on Deep Learning using Selenium,VADER, nltk,Tensorflow etc. Have Python development experience for Data Science projects.
 :::
 
 ::: {.column .colskill}
@@ -97,11 +95,17 @@ Have Python development experience for Data Science projects.
 
 #### SQL
 
-Have working experience of SQL database like PostgreSQL, Microsoft SQL Server etc.
+Have working experience of SQL database like  Microsoft SQL Server, MySQL etc.
 :::
 
 ::: {.column .colskill}
+<i class="fas fa-file-code"></i>
 
+#### C# and .NET Programming
+Have 4 years working experience in  C# and .NET Frameworks.
+:::
+
+::: {.column .colskill}
 
 :::
 :::
