@@ -75,7 +75,10 @@ data_for_ts<-data %>%
  data_for_ts<-data_for_ts%>%rename(Employed_Percentage= Percent) 
 
 
- ggplot( data = data_for_ts, aes( Year_Recorded, Employed_Percentage )) + geom_line()
+
+ ggplot( data = data_for_ts, aes( Year_Recorded, Employed_Percentage )) + 
+   geom_line()+
+   xlab("<b> Employed Percentage </b>") + ylab("<b> Year Recorded </b>")
 ```
 It was observed that there was a higher number of employed graduates than those who were seeking employment throughout the period of 2016 to 2021. For instance in 2020, employed students were 1232 while those seeking employment were 287. 
 
