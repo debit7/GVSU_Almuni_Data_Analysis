@@ -38,7 +38,7 @@ Graduate Research Assistant at GVSU
 ::: {.column .right itemprop="description"}
 <b class="bio">Biography</b>
 
-I write codes in C#, Python , R  and .NET Frameworks  Besides that, I'm also familiar with Machine Learning,Image Processing,Deep Learning, SQL and NoSQL databases.
+I write codes in C#, Python , R  and .NET Frameworks.Besides that, I'm also familiar with Machine Learning,Image Processing,Deep Learning, SQL and NoSQL databases.
 
 For pleasure, I enjoy books 📖, cooking 🍳, music 🎶, travel ✈.
 

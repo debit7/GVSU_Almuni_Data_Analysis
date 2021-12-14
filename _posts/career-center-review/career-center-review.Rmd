@@ -1,7 +1,7 @@
 ---
 title: "Career Center Review"
 description: |
-  Below is an analysis of the levels of satisfaction for various GVSU career center services. 
+  This is an analysis of the levels of satisfaction for various GVSU career center services. 
 author:
   - name: Debit and Jae Mwangi
     url: {}

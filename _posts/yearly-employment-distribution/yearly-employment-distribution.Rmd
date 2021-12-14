@@ -1,7 +1,7 @@
 ---
 title: "Yearly Employment Distribution"
 description: |
-  Below is a time series analysis of the number  of employed GVSU graduates from 2016 to 2021.
+  This is a time series analysis of the number  of employed GVSU graduates from 2016 to 2021.
 author:
   - name: Debit paudel and Jae Mwangi
     url: {}
@@ -75,8 +75,11 @@ data_for_ts<-data %>%
  data_for_ts<-data_for_ts%>%rename(Employed_Percentage= Percent) 
 
 
- ggplot( data = data_for_ts, aes( Year_Recorded, Employed_Percentage )) + geom_line() 
+ ggplot( data = data_for_ts, aes( Year_Recorded, Employed_Percentage )) + geom_line()
+```
+It was observed that there was a higher number of employed graduates than those who were seeking employment throughout the period of 2016 to 2021. For instance in 2020, employed students were 1232 while those seeking employment were 287. 
 
+```{r}
 v2 <- xtabs(cbind(Graduated_numbers, Percent) ~ PrimaryStatusAfterGraduation + Year_Recorded, data)
 
 
@@ -97,6 +100,6 @@ add_header_above(kable(rbind(Seeking, Enrolled,Employed), col.names = rep(c("Cou
 
 
 ```
-
+There was a decline in the number of students employed from 2019 to 2020 (1327 to 1232) but there was almost an equal increase in the number of graduates who enrolled for masters degree in the same year (263 to 340). However, 2021 is already showing a rise in the number of students getting jobs.
 
 

@@ -1,32 +1,32 @@
 [
   {
-    "path": "posts/author-introduction/",
-    "title": "Author Introduction",
-    "description": "Debit and Jae are Students of MS in Data Science and Analytics.",
-    "author": [],
-    "date": "2021-12-03",
-    "categories": [],
-    "contents": "\n\n\n\n\nDebit Paudel\n\n\n\nData Scientist\n\n\nGraduate Research Assistant at GVSU\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiography\nI write codes in C#, Python , R and .NET Frameworks Besides that, I’m also familiar with Machine Learning,Image Processing,Deep Learning, SQL and NoSQL databases.\nFor pleasure, I enjoy books 📖, cooking 🍳, music 🎶, travel ✈.\nYou might want to read my Data Science Blogs.\n\nInterests\nData Science / Machine Learning\nDeep Learning\n\n\nEducation\n🎓 MS Data Science & Analytics , GVSU\n🎓 B.E. Electronics & Comm., Tribhuvan University\n\n\n\n\nSkills\n\n\nR Programming\nApply data science with R using tidyverse, automate business reports, build distill website and R shiny app.\n\n\n\nData Visualization\nVisualize the data using different tools like ggplot2, matplotlib, seaborn etc.\n\n\n\nPython\nDoing Research Project on Deep Learning using Selenium,VADER, nltk,Tensorflow etc. Have Python development experience for Data Science projects.\n\n\n\nSQL\nHave working experience of SQL database like Microsoft SQL Server, MySQL etc.\n\n\n\nC# and .NET Programming\nHave 4 years working experience in C# and .NET Frameworks.\n\n\n\n\n\n\n\n\nJae Mwangi\n\n\n\nData Analyst\n\n\nPublic Health Administrator at GVSU\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiography\nI enjoy seeing data come to life through visualizations in R Grammar of Graphics. I am also familiar with various database management systems such as SQL, noSQL databases (MongoDB, Redis and Neo4j). I am also practicing my Python skills.\nI enjoy reading 📖, outdoors activities, music 🎶, travel ✈.\nYou might want to read my Data Science Blogs.\n\nInterests\nData Analytics\n\n\nEducation\n🎓 MS Data Science & Analytics , GVSU\n🎓 PGDP Financial Mathematics, University of Exeter\n\n\n\n\nSkills\n\n\nR Programming\nApply data science with R using tidyverse, automate business reports, build dashboard with R / Shiny.\n\n\n\nData Visualization\nVisualize the data using different tools like ggplot2, matplotlib, seaborn, tableau, PowerBI etc.\n\n\n\nPython\nHave graduate coursework experience in basic Python projects.\n\n\n\nSQL\nHave coursework experience in SQL projects.\n\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-12-03T17:08:14+00:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/yearly-employment-distribution/",
     "title": "Yearly Employment Distribution",
-    "description": "Below is a time series analysis of the number  of employed GVSU graduates from 2016 to 2021.",
+    "description": "This is a time series analysis of the number  of employed GVSU graduates from 2016 to 2021.",
     "author": [
       {
         "name": "Debit paudel and Jae Mwangi",
         "url": {}
       }
     ],
-    "date": "2021-12-02",
+    "date": "2021-12-14",
     "categories": [],
-    "contents": "\n\n\n\n\n\n2016\n\n\n\n\n2017\n\n\n\n\n2018\n\n\n\n\n2019\n\n\n\n\n2020\n\n\n\n\n2021\n\n\n\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nSeeking\n\n\n59\n\n\n15.86022\n\n\n201\n\n\n10.95965\n\n\n231\n\n\n12.38606\n\n\n192\n\n\n10.77441\n\n\n287\n\n\n15.43841\n\n\n21\n\n\n3.620690\n\n\nEnrolled\n\n\n40\n\n\n10.75269\n\n\n270\n\n\n14.72192\n\n\n259\n\n\n13.88740\n\n\n263\n\n\n14.75870\n\n\n340\n\n\n18.28940\n\n\n30\n\n\n5.172414\n\n\nEmployed\n\n\n273\n\n\n73.38710\n\n\n1363\n\n\n74.31843\n\n\n1375\n\n\n73.72654\n\n\n1327\n\n\n74.46689\n\n\n1232\n\n\n66.27219\n\n\n529\n\n\n91.206897\n\n\n\n\n\n",
+    "contents": "\n\n\n\nIt was observed that there was a higher number of employed graduates than those who were seeking employment throughout the period of 2016 to 2021. For instance in 2020, employed students were 1232 while those seeking employment were 287. There was a decline in the number of students employed from 2019 to 2020 (1327 to 1232) but there was almost an equal increase in the number of graduates who enrolled for masters degree in the same year (263 to 340). However, 2021 is already showing a rise in the number of students getting jobs.\n\n\n\n\n\n2016\n\n\n\n\n2017\n\n\n\n\n2018\n\n\n\n\n2019\n\n\n\n\n2020\n\n\n\n\n2021\n\n\n\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nCount\n\n\nPercent\n\n\nSeeking\n\n\n59\n\n\n15.86022\n\n\n201\n\n\n10.95965\n\n\n231\n\n\n12.38606\n\n\n192\n\n\n10.77441\n\n\n287\n\n\n15.43841\n\n\n21\n\n\n3.620690\n\n\nEnrolled\n\n\n40\n\n\n10.75269\n\n\n270\n\n\n14.72192\n\n\n259\n\n\n13.88740\n\n\n263\n\n\n14.75870\n\n\n340\n\n\n18.28940\n\n\n30\n\n\n5.172414\n\n\nEmployed\n\n\n273\n\n\n73.38710\n\n\n1363\n\n\n74.31843\n\n\n1375\n\n\n73.72654\n\n\n1327\n\n\n74.46689\n\n\n1232\n\n\n66.27219\n\n\n529\n\n\n91.206897\n\n\n\n\n\n",
     "preview": "posts/yearly-employment-distribution/yearly-employment-distribution_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-12-02T14:31:10+00:00",
+    "last_modified": "2021-12-14T14:58:34+00:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/author-introduction/",
+    "title": "Author Introduction",
+    "description": "Debit and Jae are Students of MS in Data Science and Analytics.",
+    "author": [],
+    "date": "2021-12-14",
+    "categories": [],
+    "contents": "\n\n\n\n\nDebit Paudel\n\n\n\nData Scientist\n\n\nGraduate Research Assistant at GVSU\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiography\nI write codes in C#, Python , R and .NET Frameworks.Besides that, I’m also familiar with Machine Learning,Image Processing,Deep Learning, SQL and NoSQL databases.\nFor pleasure, I enjoy books 📖, cooking 🍳, music 🎶, travel ✈.\nYou might want to read my Data Science Blogs.\n\nInterests\nData Science / Machine Learning\nDeep Learning\n\n\nEducation\n🎓 MS Data Science & Analytics , GVSU\n🎓 B.E. Electronics & Comm., Tribhuvan University\n\n\n\n\nSkills\n\n\nR Programming\nApply data science with R using tidyverse, automate business reports, build distill website and R shiny app.\n\n\n\nData Visualization\nVisualize the data using different tools like ggplot2, matplotlib, seaborn etc.\n\n\n\nPython\nDoing Research Project on Deep Learning using Selenium,VADER, nltk,Tensorflow etc. Have Python development experience for Data Science projects.\n\n\n\nSQL\nHave working experience of SQL database like Microsoft SQL Server, MySQL etc.\n\n\n\nC# and .NET Programming\nHave 4 years working experience in C# and .NET Frameworks.\n\n\n\n\n\n\n\n\nJae Mwangi\n\n\n\nData Analyst\n\n\nPublic Health Administrator at GVSU\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiography\nI enjoy seeing data come to life through visualizations in R Grammar of Graphics. I am also familiar with various database management systems such as SQL, noSQL databases (MongoDB, Redis and Neo4j). I am also practicing my Python skills.\nI enjoy reading 📖, outdoors activities, music 🎶, travel ✈.\nYou might want to read my Data Science Blogs.\n\nInterests\nData Analytics\n\n\nEducation\n🎓 MS Data Science & Analytics , GVSU\n🎓 PGDP Financial Mathematics, University of Exeter\n\n\n\n\nSkills\n\n\nR Programming\nApply data science with R using tidyverse, automate business reports, build dashboard with R / Shiny.\n\n\n\nData Visualization\nVisualize the data using different tools like ggplot2, matplotlib, seaborn, tableau, PowerBI etc.\n\n\n\nPython\nHave graduate coursework experience in basic Python projects.\n\n\n\nSQL\nHave coursework experience in SQL projects.\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-12-14T15:01:53+00:00",
+    "input_file": "author-introduction.knit.md"
   },
   {
     "path": "posts/alumni-distribution/",
@@ -42,7 +42,7 @@
     "categories": [],
     "contents": "\nIt was observed that most (87%) GVSU graduates remain in Michigan after graduation.\n\n\n\n\n\n\n",
     "preview": "posts/alumni-distribution/alumni-distribution_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-12-02T14:31:22+00:00",
+    "last_modified": "2021-12-08T02:29:01+00:00",
     "input_file": {}
   },
   {
@@ -65,7 +65,7 @@
   {
     "path": "posts/career-center-review/",
     "title": "Career Center Review",
-    "description": "Below is an analysis of the levels of satisfaction for various GVSU career center services.",
+    "description": "This is an analysis of the levels of satisfaction for various GVSU career center services.",
     "author": [
       {
         "name": "Debit and Jae Mwangi",
@@ -76,7 +76,7 @@
     "categories": [],
     "contents": "\nThe results revealed that GVSU graduates had a general sense of satisfaction with the Career Center services across the board.\n\n\n\nIt was observed that most GVSU graduates had utilized the career center job and internship search services as well as the handshake job search web application to obtain employment after graduation. However, results showed that only about half of the 4000 respondents leveraged career center workshops and only a little over a half utilized on-campus interview practice offered by the career center.\n\n\n\nThis revealed the gap that exists in students making time to attend career workshops as well as the under-utilization of interview preparation services offered by the career center.\n\n\n\nTherefore, we encourage all students to maximize the use of the career center services to prepare themselves for the job market.\n\n\n\n",
     "preview": "posts/career-center-review/career-center-review_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2021-12-02T04:10:31+00:00",
+    "last_modified": "2021-12-14T14:58:01+00:00",
     "input_file": {}
   }
 ]

@@ -1,7 +1,7 @@
 ---
 title: "Alumni Distribution"
 description: |
-  The map below shows the number of GVSU alumni as distributed in the different states of USA.
+  The map  shows the number of GVSU alumni as distributed in the different states of USA.
 author:
   - name: Debit and Jae Mwangi
     url: {}
@@ -36,10 +36,14 @@ centroid_labels <- utils::read.csv(system.file("extdata", paste0("us_", "states"
 # Join data to centroids
 data_labels <- centroid_labels %>% 
   left_join(grouped_state)
-plot_usmap(data=grouped_state, values="count_states", color='white', labels=FALSE) + 
-  guides(fill="none") +
+ plot_usmap(data=grouped_state, values="count_states", color='white', labels=FALSE)+
+   theme(legend.position = "right") +
+   theme(legend.title = element_blank())+
+  
+  # guides(fill="none") +
   geom_text(data = data_labels, ggplot2::aes(x = x, y = y, 
-                                             label = scales::number(count_states, accuracy = 1)), color = "white")
+                                             label = scales::number(count_states, accuracy = 1)), color = "white")+
+  ggtitle('Alumni Distribution of GVSU ')  
 
 ```
 
